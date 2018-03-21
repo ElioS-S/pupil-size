@@ -6,9 +6,9 @@ classdef PupilDataModel < handle
     %
     %    # Convert eye-tracker output to compatible mat files.
     %       > This class reads in a standard mat file that contains the
-    %         pupil size data and metadata, as information about how to
-    %         segments the recording into the desired sections. See
-    %         RawFileModel.m for information.
+    %         pupil size data and metadata, as well as information about
+    %         how to segments the recording into the desired sections.
+    %         See RawFileModel.m for information.
     %
     %
     %    # Generating the PupilDataModel instances:
@@ -29,7 +29,7 @@ classdef PupilDataModel < handle
     %
     %
     %    # Processing the raw data:
-    %       > Call the filterRawData() method on an object (array) to
+    %       > Call the filterRawData() method on an object (or array) to
     %         process the raw data; i.e. the apply the filter steps
     %         described in the article and mark a subset of the raw data as
     %         'valid':
@@ -38,8 +38,8 @@ classdef PupilDataModel < handle
     %
     %
     %    # Processing the valid data:
-    %       > Call the processValidSamples() method on an object (array) to
-    %         process the raw samples marked as valid. These samples are
+    %       > Call the processValidSamples() method on an object (or array)
+    %         to process the raw samples marked as valid. These samples are
     %         used to create a smooth high-resolution pupil size signal
     %         through interpolation and low-pass filtering.
     %
