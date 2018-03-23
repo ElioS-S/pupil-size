@@ -1,8 +1,10 @@
 # pupil-size
-Matlab scripts for preprocessing pupil size timeseries.
+MATLAB scripts for preprocessing pupil size timeseries.
 
-This code assumes that the user is proficient in Matlab, with knowledge of Object
+This code assumes that the user is proficient in MATLAB, with knowledge of Object
 Oriented Programming and Handle classes.
+
+The code requires the ‘Signal Processing Toolbox’ and the ‘Statistics and Machine Learning Toolbox’, and was tested with MATLAB versions 2012b, 2016a & 2017a, running on Windows 7.
 
 ## Data Models:
 This repository contains a collection of Matlab classes and helper scripts that can be used for preprocessing pupil size data in an object-oriented manner.
