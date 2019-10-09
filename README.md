@@ -1,3 +1,5 @@
+_Note: the pipeline implemented in this code has been incorporated into the PhysioData Toolbox, which is a free compiled application aimed at creating an easy-to-use graphical environment for visualizing, segmenting and analyzing physiological data. See https://physiodatatoolbox.leidenuniv.nl/ for more information._
+
 # pupil-size
 MATLAB scripts for preprocessing pupil size timeseries.
 
