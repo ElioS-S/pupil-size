@@ -90,8 +90,8 @@ L(L==0) = NaN;
 
 % Process events (only extract relevant events):
 evtRows = arrayfun(@(f) ~isempty(f.message),rawEDF.FEVENT);
-eventData.t    = double((vertcat(rawEDF.FEVENT(evtRows).sttime)...
-    -zeroTime_ms))/1000;
+eventData.t    = (double(vertcat(rawEDF.FEVENT(evtRows).sttime))...
+    -zeroTime_ms)/1000;
 eventData.name = {rawEDF.FEVENT(evtRows).message}';
 
 % Find trials start and end times:
